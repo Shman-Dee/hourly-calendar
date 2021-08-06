@@ -29,10 +29,8 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist */
 
-
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -67,6 +65,11 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+}
+
+time {
+  text-align: center;
+  padding: 50%;
 }
 
 .hour {
