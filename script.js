@@ -14,9 +14,12 @@ $(document).ready(function () {
     $(".time-block").each(function () {
       var slotHour = parseInt($(this).attr("id"));
       if (slotHour < hour) {
+        $(this).removeClass("future");
+        $(this).removeClass("present");
         $(this).addClass("past");
       } else if (slotHour === hour) {
         $(this).removeClass("past");
+        $(this).removeClass("future");
         $(this).addClass("present");
       } else {
         $(this).removeClass("past");
